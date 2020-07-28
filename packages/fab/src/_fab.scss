@@ -124,7 +124,7 @@ $icon-size: map.get(fab-theme.$light-theme, icon-size);
       );
 
       ::slotted([slot='icon']) {
-        @include fab-mixins.extended-icon-padding_(
+        @include fab-mixins.extended-icon-padding(
           $extended-icon-padding,
           $extended-label-padding
         );
@@ -132,7 +132,7 @@ $icon-size: map.get(fab-theme.$light-theme, icon-size);
 
       &.icon-end {
         .mdc-fab__icon {
-          @include fab-mixins.extended-icon-padding_(
+          @include fab-mixins.extended-icon-padding(
             $extended-icon-padding,
             $extended-label-padding,
             $is-icon-at-end: true
@@ -140,7 +140,7 @@ $icon-size: map.get(fab-theme.$light-theme, icon-size);
         }
 
         ::slotted([slot='icon']) {
-          @include fab-mixins.extended-icon-padding_(
+          @include fab-mixins.extended-icon-padding(
             $extended-icon-padding,
             $extended-label-padding,
             $is-icon-at-end: true
